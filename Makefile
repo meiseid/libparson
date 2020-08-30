@@ -25,8 +25,8 @@ clean:
 	rm -f *.o* *.a *.so*
 
 install:	all
-	install -s libparson.a $(DESTLIB)
-	install -s libparson.so.1.0 $(DESTLIB)
+	install libparson.a $(DESTLIB)
+	install libparson.so.1.0 $(DESTLIB)
 	ldconfig $(DESTLIB)
 	ln -f -s $(DESTLIB)/libparson.so.1 $(DESTLIB)/libparson.so
 	install -m 0644 ../parson/parson.h $(DESTINC)
