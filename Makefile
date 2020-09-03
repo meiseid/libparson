@@ -28,5 +28,5 @@ install:	all
 	install libparson.a $(DESTLIB)
 	install libparson.so.1.0 $(DESTLIB)
 	ldconfig $(DESTLIB)
-	ln -f -s $(DESTLIB)/libparson.so.1 $(DESTLIB)/libparson.so
+	ln -f -s -r $(DESTLIB)/libparson.so.1 $(DESTLIB)/libparson.so
 	install -m 0644 ../parson/parson.h $(DESTINC)
